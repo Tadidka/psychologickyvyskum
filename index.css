@@ -1,26 +1,33 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f0; color: #4e4e4e } 
+html, body { overflow-x: hidden; width: 100%; height: 100%; margin: 0; padding: 0}
 
-header { background-color: #6d4c41; color: white; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) } 
+* { box-sizing: border-box; }
 
-main { padding: 20px; max-width: 1200px; margin: auto } .grid-container { display: flex; flex-wrap: wrap; justify-content: space-between } 
+body { font-family: Arial, Helvetica, sans-serif; background-color: #f7f7f7; color: #333}
 
-section { background-color: #fff3e0; border-radius: 8px; padding: 20px; margin: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); width: calc(48% - 20px); box-sizing: border-box; transition: transform 0.2s, box-shadow 0.2s } 
-section:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2) } 
+header { background: linear-gradient(90deg, #00ffff, #db222a); color: white; padding: 20px; 
+         text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)}
 
-h2 { color: #5d4037; margin-top: 0; border-bottom: 2px solid #d7ccc8; padding-bottom: 10px } 
-p { line-height: 1.6; margin: 0 } 
+main { padding: 20px; max-width: 1200px; margin: auto}
+.grid-container { display: flex; flex-wrap: wrap; justify-content: space-between}
+section { background-color: #f0f0f0; border-radius: 8px; padding: 20px; margin: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+          width: calc(48% - 20px); box-sizing: border-box; transition: transform 0.2s, box-shadow 0.2s}
+section:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2)}
+.results-info { width: 100%; text-align: center; }
 
-a { color: #5d4037; text-decoration: none } a:hover { text-decoration: underline } 
-.linkedin{color:#f5f5f0; text-decoration: underline;}
-.linkedin:hover {color: #64b5f6}
+h2 { color: #1e3a8a; margin-top: 0; border-bottom: 2px solid #b3e0ff; padding-bottom: 10px}
+p { line-height: 1.6; margin: 0}
+a { color: #1e3a8a; text-decoration: none}
+a:hover { text-decoration: underline}
+.linkedin { color: #f5f5f0; text-decoration: underline}
+.linkedin:hover { color: #64b5f6}
 
+button { background-color: #64b5f6; color: white; border: none; width: 100%; border-radius: 25px; padding: 12px 30px; 
+         font-size: 16px; font-weight: 600; text-transform: uppercase; cursor: pointer; margin-top: 40px; 
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease}
+button:hover { background-color: #0288d1; transform: scale(1.05); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)}
+button:active { transform: scale(0.98); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)}
 
-button { background-color: #8d6e63; color: white; border: none; border-radius: 5px; padding: 10px 15px; cursor: pointer; margin-top: 10px; transition: background-color 0.3s, transform 0.2s } 
-button:hover { background-color: #795548; transform: scale(1.05) } 
+footer { text-align: center; padding: 10px; background-color: #00695c; color: #f5f5f0; position: relative; bottom: 0; 
+         width: 100%; margin-top: 20px}
 
-footer { text-align: center; padding: 10px; background-color: #6d4c41; color:#f5f5f0; position: relative; bottom: 0; width: 100%; margin-top: 20px } .results-info { width: 100%; text-align: center } 
-
-@media (max-width: 768px) { 
-  section { width: 100%; margin: 10px 0 } 
-  .grid-container { flex-direction: column; align-items: center } 
-}
+@media (max-width: 768px) { section { width: 100%; margin: 10px 0; } .grid-container { flex-direction: column; align-items: center} }
