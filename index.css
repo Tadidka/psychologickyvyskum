@@ -37,7 +37,7 @@ footer { text-align: center; padding: 10px; background-color: #608da2; color: wh
     .grid-container {flex-direction: column;align-items: center}
 
     header{background-image:url(background-mobile.jpg)}      
-    header h1 {font-size: 2rem;padding: 10px 20px}
+    header h1 {font-size: 2rem;padding: 0 20px}
     h2 {font-size: 1.5rem}
     
     button {font-size: 14px;padding: 10px 20px}
