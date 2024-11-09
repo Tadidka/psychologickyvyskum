@@ -1,54 +1,88 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Výsledky výskumu</title>
-    <link rel="stylesheet" href="index.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Výsledky výskumu</title>
+	<link rel="stylesheet" href="index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Birthstone&family=Clicker+Script&family=Kaisei+Decol&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Birthstone&family=Clicker+Script&family=Kaisei+Decol&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-		<h1>Výsledky výskumu</h1>
-	 </header>
-    <main>
-        <div class="grid-container">
-            <section class="results-info">
-                <h2>Informácie o výsledkoch</h2>
-                <p>Výsledky nášho experimentu budú zverejnené na tejto stránke začiatkom decembra.</p>
-            </section>
-            <section class="who-we-are">
-                <h2>Kto sme</h2>
-                <p>Ďakujeme Vám za Vašu ochotu zúčastniť sa výskumu. Táto štúdia je realizovaná študentkami druhého ročníka psychológie na Univerzite Konštantína filozofa v Nitre a jej cieľom je sledovať fenomén fajčenia. <br>Tento výskum je realizovaný bez akéhokoľvek financovania.</p>
-            </section>
-            <section class="participation">
-                <h2>Účasť</h2>
-                <p>Výskum pre Vás nepredstavuje žiadne riziká. Napriek tomu, ak sa budete pri odpovedaní na otázky cítiť nepríjemne, alebo z rôznych dôvodov nebudete chcieť prejaviť svoj názor či preferenciu, nemusíte odpovedať. Vaša účasť vo výskume je dobrovoľná a môžete ju kedykoľvek a z akýchkoľvek dôvodov ukončiť.</p>
-            </section>
-            <section class="discretion">
-                <h2>Diskrétnosť a anonymita</h2>
-                <p>Tento výskum je navrhnutý tak, aby všetky údaje boli anonymné, takže svoje osobné názory a preferencie môžete vyjadriť bez obáv. Nebudeme sa pýtať na žiadne informácie súvisiace s Vašou identitou (ako je meno, pracovisko a podobne). K údajom z výskumu budú mať prístup iba autorky výskumu, ktoré nebudú mať možnosť identifikovať osobu a spojiť ju s konkrétnymi údajmi.</p>
-            </section>
-            <section class="questions">
-              <h2>Otázky</h2>
-              <p>Ak máte akékoľvek otázky, neváhajte nás kontaktovať na našej e-mailovej adrese: 
-                  <a href="mailto:experiment.vyskum@gmail.com">experiment.vyskum@gmail.com</a>
-              </p>
-              <button id="copy-email">Skopírovať e-mail</button>
-            </section>
-        </div>
-    </main>
-    <footer>
-      <p>&copy; 2024 Psychológia UKF Nitra | by <a href="https://www.linkedin.com/in/be%C3%A1ta-hal%C3%A1sov%C3%A1-2bb297307?originalSubdomain=sk" target="_blank" class="linkedin">B.HALÁSOVÁ</a></p
-    </footer>
-    <script>
-        document.getElementById('copy-email').addEventListener('click', function() {
-            navigator.clipboard.writeText('experiment.vyskum@gmail.com').then(() => {
+	<header>
+		<h1>Výsledky výskumu<h1/>
+	</header>
+	<main>
+		<div class="grid-container">
+			<section class="results-info">
+				<h2>Informácie o výsledkoch</h2>
+				<p>Výsledky nášho experimentu budú zverejnené na tejto stránke začiatkom decembra.<br> Dovtedy budeme veľmi vďačné, ak sa zúčastníte nášho výskumu na nasledujúcom linku: 
+					<a href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSctHQpX8bToFQAAPKktxh359v6HrwdpA6_W4Kr2bBoKpcjjzw/viewform?vc=0&c=0&w=1&flr=0&pli=1" target="_blank" class="dotaznik">Dotazník - "fenomén fajčenia"</a>
+				</p>
+			</section>
+			<section class="description">
+				<h2>Základné informácie</h2>
+				<p>Ďakujeme Vám za Vašu ochotu zúčastniť sa výskumu. <br> Táto štúdia je realizovaná študentkami druhého ročníka psychológie na Univerzite Konštantína filozofa v Nitre a jej cieľom je sledovať fenomén fajčenia. <br><br>Tento výskum je realizovaný bez akéhokoľvek financovania.</p>
+			</section>
+			<section class="participation">
+				<h2>Účasť</h2>
+				<p>Výskum pre Vás nepredstavuje žiadne riziká. Napriek tomu, ak sa budete pri odpovedaní na otázky cítiť nepríjemne, alebo z rôznych dôvodov nebudete chcieť prejaviť svoj názor či preferenciu, nemusíte odpovedať. <br><br>Vaša účasť vo výskume je dobrovoľná a môžete ju kedykoľvek a z akýchkoľvek dôvodov ukončiť.</p>
+			</section>
+			<section class="discretion">
+				<h2>Diskrétnosť a anonymita</h2>
+				<p>Tento výskum je navrhnutý tak, aby všetky údaje boli anonymné, takže svoje osobné názory a preferencie môžete vyjadriť bez obáv. Nebudeme sa pýtať na žiadne informácie súvisiace s Vašou identitou (ako je meno, pracovisko a podobne). K údajom z výskumu budú mať prístup iba autorky výskumu, ktoré nebudú mať možnosť identifikovať osobu a spojiť ju s konkrétnymi údajmi.</p>
+			</section>
+			<section class="questions">
+				<h2>Otázky</h2>
+				<p>Ak máte akékoľvek otázky, neváhajte nás kontaktovať na našej e-mailovej adrese: 
+					<a href="mailto:experiment.vyskum@gmail.com">experiment.vyskum@gmail.com</a>
+				</p>
+				<button id="copy-email">Skopírovať e-mail</button>
+			</section>
+		</div>
+		<div class="team-container">
+			<h2 class="section-title">Náš výskumný tým</h2>
+			<div class="team-section">
+				<div class="member">
+					<img src="danka.jpeg" alt="Daniela Mančíková">
+					<h3>Daniela Mančíková</h3>
+					<p>Študentka psychológie, ktorá sa podieľala na formulácii výskumných hypotéz, tvorbe literárneho prehľadu a metodológii. <br><br>Daniela je nadšená pre metodológiu a má ambíciu <strong>venovať sa výskumu</strong> na doktorandskej úrovni, aby mohla prispievať k vedeckému poznaniu a pozitívne ovplyvňovať životy ľudí. <br><br>Vo voľnom čase sa venuje meditácii, štúdiu buddhizmu a záhradkárčeniu.</p>
+				</div>
+				<div class="member">
+					<img src="niky.jpeg" alt="Nicol Kónyová">
+					<h3>Nicol Kónyová</h3>
+					<p>Študentka psychológie, ktorá pre Vás vytvorila online verziu dotazníka a podieľala sa na jeho preklade a tiež na tvorbe literárneho prehľadu. <br><br>Nicol sa chce po ukončení štúdia venovať deťom, čiže byť <strong>detskou alebo školskou psychologičkou</strong>. <br><br>Okrem štúdia rada kreslí, cestuje a trávi čas s rodinou a s blízkymi.</p>
+				</div>
+				<div class="member">
+					<img src="domi.jpeg" alt="Dominika Krnčoková">
+					<h3>Dominika Krnčoková</h3>
+					<p>Študentka psychológie, podieľajúca sa na výskume vrámci metodológie a vyhodnocovania výsledkov nášho výskumu. <br><br>Dominiku zaujímajú medziľudské vzťahy, faktory ovplyvňujúce každodenný život ľudí a má ambíciu stať sa <strong>klinickou psychologičkou</strong>. Vďaka takejto pozícií by chcela pomáhať ľuďom rôznej vekovej kategórií v ich živote. <br><br>Vo voľnom čase rada cvičí, skúša nové adrenalínové športy a cestuje.</p>
+				</div>
+				<div class="member">
+					<img src="bejka.jpeg" alt="Beáta Halásová">
+					<h3>Beáta Halásová</h3>
+					<p>Študentka psychológie, podieľajúca sa na tvorbe výskumného problému, vytvorila scenár k videu a natočila ho. Po zozbieraní dát bude spracovávať výsledky výskumu. <br><br>Veľmi ju zaujíma oblasť <strong>policajnej a väzenskej psychológie</strong>, a v budúcnosti by sa chcela venovať okrem práce vo forenznej oblasti aj <strong>súdnemu znalectvu</strong>. <br><br>Vo voľnom čase sa učí programovať, hrá na hudobné nástroje a spieva, kreslí a háčkuje.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2024 Psychológia UKF Nitra | by 
+			<a href="https://www.linkedin.com/in/be%C3%A1ta-hal%C3%A1sov%C3%A1-2bb297307?originalSubdomain=sk" target="_blank" class="linkedin">B.HALÁSOVÁ</a>
+		</p>
+	</footer>
+
+	<script>
+    document.getElementById('copy-email').addEventListener('click', function() {
+        navigator.clipboard.writeText('experiment.vyskum@gmail.com')
+            .then(function() {
                 alert('E-mailová adresa bola skopírovaná do schránky!');
+            })
+            .catch(function() {
+                alert('Kopírovanie zlyhalo. Skúste to prosím znova.');
             });
-        });
-    </script>
+    });
+</script>
 </body>
 </html>
