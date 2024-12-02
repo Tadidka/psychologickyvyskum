@@ -1,67 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Birthstone&family=Clicker+Script&family=Instrument+Serif:ital@0;1&family=Kaisei+Decol&family=Rubik+80s+Fade&display=swap');
 
+* { box-sizing: border-box}
 html, body { overflow-x: hidden; width: 100%; height: 100%; margin: 0; padding: 0}
+body { font-family: "Instrument Serif", serif; background-color: #f7f7f7; color: #333; line-height: 1.5}
 
-* { box-sizing: border-box; }
+header {background-image: url(header-background.jpg); background-size: cover; width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; color: white; font-size: 2rem;text-align: center;padding: 20px}
+main { padding: 20px; max-width: 1200px; margin: auto}
+footer {padding: 10px;background-color: rgba(96, 141, 162, 0.7);color: white;bottom: 0;font-weight: 500;font-size: 17px;}
 
-body { font-family: Arial; background-color: #f7f7f7; color: #333; font-family: "Instrument Serif", serif; line-height: 1.5;}
+.result-box:last-child, footer{flex: 0 0 100%;margin-top: 20px;text-align: center;display: flex;justify-content: center;align-items: center;flex-direction: column}
+.grid-container, .grid-results { display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 20px}
+section, result-box {border-radius: 8px;padding: 20px;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);margin-top: 20px;transition: transform 0.2s, box-shadow 0.2s;}
+h2,a,strong,.section-title {color: #365563;}
 
-header {background-image:url(header-background.jpg);background-size:cover;width: 100%;
-	display: flex;justify-content: center;align-items: center;overflow: hidden; color: white; font-size: 2rem}
+h2 {margin-top: 0; border-bottom: 2px solid #8eb1c2; padding-bottom: 10px; font-size: 2rem; text-align: center}
+h3 {color: #4c6d78; font-size: 1.5rem; margin-top: 20px; text-align: center}
+p { margin: 0; font-size: 1.2rem; letter-spacing: 0.5px; text-align: justify}
+a { text-decoration: none}
+a:hover, .linkedin {text-decoration: underline}
+.linkedin { color: #f5f5f0;text-decoration: underline}
+.linkedin:hover { font-weight: 800}
 
-main { padding: 10px; max-width: 1200px; margin: auto}
-
-.grid-container { display: flex; flex-wrap: wrap; justify-content: space-evenly; gap:20px}
-section { background-color: #f0f0f0; border-radius: 8px; padding: 20px 20px 30px 20px; margin-top: 20px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);width: calc(50% - 12px); box-sizing: border-box; 
-	transition: transform 0.2s, box-shadow 0.2s}
+section { background-color: #f0f0f0; width: calc(50% - 12px); box-sizing: border-box}
 section:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2)}
-.results-info { width: 100%; text-align: center; }
 
-h2 { color: #365563; margin-top: 0; border-bottom: 2px solid #8eb1c2; padding-bottom: 10px; font-size: 2rem; text-align: center;}
-p {margin: 0; font-size: 1.2rem;letter-spacing: 0.5px;}
-a { color: #365563; text-decoration: none}
-a:hover { text-decoration: underline}
-.linkedin { color: #f5f5f0; text-decoration: underline}
-.linkedin:hover { color: #64b5f6}
-
-button { background-color: rgba(96, 141, 162, 0.7); color: white; border: none; width: 100%; border-radius: 25px; padding: 12px 30px; 
-         font-size: 16px; text-transform: uppercase; cursor: pointer; margin-top: 40px; 
-         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; font-family: "Instrument Serif", serif; letter-spacing: 2px}
+button { background-color: rgba(96, 141, 162, 0.7); color: white; border: none; width: 100%; border-radius: 25px; padding: 12px 30px; font-size: 16px; text-transform: uppercase; cursor: pointer; margin-top: 40px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; font-family: "Instrument Serif", serif; letter-spacing: 2px}
 button:hover { background-color: rgba(96, 141, 162, 1); transform: scale(1.05); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)}
 button:active { transform: scale(0.98); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)}
+button strong {color: white}
 
-team-container { text-align: center; margin-top: 40px }
-.section-title { font-size: 2rem; color: #365563; margin: 25px 0; font-family: "Kaisei Decol", serif;
-	border-bottom: 2px solid #8eb1c2; padding-bottom: 10px; text-align: center;}
-.team-section { display: flex; justify-content: space-between; gap: 5px; flex-wrap: wrap }
-
-.member { text-align: center; flex: 1; max-width: 280px; background-color: #f0f0f0; border-radius: 8px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.2s, box-shadow 0.2s }
-.member img {width: 100%;height: 300px;border-radius:8px 8px 0 0;margin-bottom: 15px; 
-	object-fit: cover}
-.text {padding: 0 10px 40px 10px}
-.text h3 { font-size: 1.5rem; color: #365563}
+.team-container { text-align: center; margin-top: 40px}
+.section-title { font-size: 2rem; margin: 25px 0; font-family: "Kaisei Decol", serif;border-bottom: 2px solid #8eb1c2; padding-bottom: 10px; text-align: center}
+.team-section { display: flex; justify-content: space-between; gap: 5px; flex-wrap: wrap}
+.member { text-align: center; flex: 1; max-width: 280px; background-color: #f0f0f0; border-radius: 8px;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: transform 0.2s, box-shadow 0.2s}
+.member img {width: 100%; height: 300px; border-radius: 8px 8px 0 0; margin-bottom: 15px; object-fit: cover}
+.text { padding: 0 10px 40px 10px}
+.text h3 { font-size: 1.5rem;border-bottom: 2px solid #8eb1c2}
 .text p { font-size: 1.2rem; color: #666}
-.member:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2) }
+.member:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2)}
 
-.btn {background-color:rgba(96, 141, 162, 0.7); display: inline-block;color: white; border: none; border-radius: 25px; padding: 12px 30px;font-size: 16px; text-transform: uppercase; cursor: pointer; margin-top: 20px}
+.results-info { width: 100%; text-align: center; padding: 20px; border-radius: 8px}
+.result-box {flex: 1 1 calc(50% - 20px);border-radius: 8px;padding: 20px;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);margin-top: 20px;box-sizing: border-box;transition: transform 0.2s, box-shadow 0.2s}
+.result-box:hover {transform: translateY(-5px);box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2)}
+.result-box {flex: 1 1 calc(50% - 20px);box-sizing: border-box}
 
-footer { text-align: center; padding: 10px; background-color: rgba(96, 141, 162, 0.7); color: white; position: relative; bottom: 0; width: 100%; margin-top: 20px; font-weight: 500; font-size: 17px;}
-
-@media (max-width: 768px) { 
-	body { font-size: 14px; } 
-	header { font-size: 1.5rem; padding: 10px; background-image: url("background-mobile.jpg"); text-align: center}
-	footer { font-size: 14px; padding: 15px; }
-	
-	section { width: 100%; margin: 15px 0; padding: 15px; } 
-	.grid-container { flex-direction: column; align-items: center; gap: 15px; }
-	.team-section { flex-direction: column; align-items: center; gap: 15px; } 
-	.member { width: 100%; max-width: 350px; margin-bottom: 20px; } 
-	.member img { height: 250px; } 
-	.section-title { font-size: 1.8rem; padding-bottom: 10px; text-align: center; }
-	
-	h2 { font-size: 1.5rem; margin-top: 0; padding-bottom: 8px; } 
-	p { font-size: 1rem; } 
-	button { font-size: 14px; padding: 12px 25px; }
+@media (max-width: 768px) {
+	body { font-size: 14px}
+	header {font-size: 1.5rem;padding: 10px;background-image: url("background-mobile.jpg");text-align: center}
+	footer { font-size: 14px; padding: 15px}
+	section { width: 100%; margin: 15px 0; padding: 15px}
+	.grid-container { flex-direction: column; align-items: center; gap: 15px}
+	.grid-results { flex-direction: column; align-items: center; gap: 15px}
+	.team-section { flex-direction: column; align-items: center; gap: 15px}
+	.member { width: 100%; max-width: 350px; margin-bottom: 20px}
+	.member img { height: 250px}
+	.section-title { font-size: 1.8rem; padding-bottom: 10px; text-align: center}
+	h2 { font-size: 1.5rem; margin-top: 0; padding-bottom: 8px}
+	p { font-size: 1rem}
+	button { font-size: 14px; padding: 12px 25px}
 }
